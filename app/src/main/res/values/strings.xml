@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Yash Management</string>
+    <string name="age">Age</string>
+    <string name="name">Name</string>
+    <string name="user_management">User Management</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="user_age">Age:30</string>
+</resources>

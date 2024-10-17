@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ExtraText"
+    android:focusableInTouchMode="true"
+        android:clickable="true"
+    android:id="@+id/mainLayout"
+    >
+    <!-- Layout Components -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/user_management"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        style="@style/CardView.Dark"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name"
+        android:layout_below="@id/titleTextView"
+        android:layout_marginTop="16dp"
+        tools:ignore="HardcodedText"
+        android:padding="5dp"/>
+
+    <EditText
+        android:id="@+id/ageEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameEditText"
+        android:hint="Enter Age"
+        android:layout_marginTop="8dp"
+        android:inputType="number"
+        tools:ignore="HardcodedText"
+        android:padding="5dp"
+        android:maxLength="3"
+        />
+    <EditText
+        android:id="@+id/mobileEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ageEditText"
+        android:hint="Enter Mobile Number"
+        android:layout_marginTop="8dp"
+        android:inputType="number"
+        android:maxLength="10"
+        tools:ignore="HardcodedText"
+        android:padding="5dp"/>
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add User"
+        android:layout_below="@id/mobileEditText"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:id="@+id/displayButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DISPLAY"
+        android:layout_below="@+id/addButton"
+        android:layout_alignStart="@+id/addButton"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/userRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/displayButton"
+        android:layout_marginTop="16dp">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>
